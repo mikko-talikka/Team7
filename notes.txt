@@ -1,0 +1,10 @@
+- jälleenmyynti autokauppa luksusautoille
+- sivujen rakenne:
+    etusivu: esittelee yritystä yleisesti, hienoja yleiskuvia, linkit välilehtiin useammassa kohdassa?
+    valikoima: ai:lla muutama autokuva, klikkaamalla autoa hyppää sivulla alas oikeaan kohtaan auton tietoihin, auton tiedot
+    huolto: kalenteri?, houltopyyntölomake?, yhteystiedot huoltoon
+    ostotarjoukset: yhteydenottolomake (tiedot autosta, mahdollisuus lähettää kuva autosta, auton tiedot yms.), yhteystiedot huoltoon
+
+- linkkipalkki joka sivun yläosassa
+- värimaailma: tumma
+- ulkoasu minimalistinen
