@@ -2,8 +2,7 @@
 
 ## About your Website (finnish or english)
 
-[Link to your layout]
-(http://...)
+https://mikko-talikka.github.io/Team7/
 
 ### Mikko
 ### Eemeli
