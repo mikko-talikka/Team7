@@ -1,11 +1,14 @@
 # Team7
 
-## About your Website (finnish or english)
+## Verkkosivu mielikuvitukselliselle luksusautoja myyvälle yritykselle
+About your Website (finnish or english) 
 
 https://mikko-talikka.github.io/Team7/
 
 ### Mikko
 ### Eemeli
+Valikoima sivu (Pois lukien header ja footer, jotka ovat samoja joka sivulla)
+Etusivun tekstiosan
 ### Arttu
 
 (nimien alle mitä kukakin on sivulla tehnyt
