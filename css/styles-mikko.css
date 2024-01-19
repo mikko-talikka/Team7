@@ -1,0 +1,68 @@
+.headerHuolto{
+    display: flex;
+    background-color: rgb(75, 75, 75);
+    font-size: 18px;
+    color: rgb(214, 205, 205);
+    padding: 2em;
+    place-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navHuolto{
+    display: flex;
+    background-color: rgb(61, 61, 61);
+    font-size: 24px;
+    padding: 0.5em;
+    place-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navUlHuolto{
+    list-style: none;
+    display: inline-block;
+}
+.liHuolto{
+    display: inline-block;
+    margin: 10px;
+}
+.aHuolto{
+    text-decoration: none;
+    color: rgb(214, 205, 205);
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+.aHuolto1{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+.h2Huolto{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0.8em;
+}
+.pHuolto{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 20px;
+}
+section.sectionHuolto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2em;
+}
+img.imgHuolto{
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 50%;
+}
+form.formHuolto{
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 3em;
+}
+.mainHuolto{
+    background-color: rgb(245, 245, 245);
+}
