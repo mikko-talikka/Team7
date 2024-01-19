@@ -8,6 +8,151 @@
     <link rel="stylesheet" href="#">
 </head>
 <body>
+    <header>
+        <h1>Luxcar</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">ETUSIVU</a></li>
+            <li><a href="pages/valikoima.html">VALIKOIMA</a></li>
+            <li><a href="pages/huolto.html">HUOLTO</a></li>
+            <li><a href="pages/ostotarjoukset.html">OSTOTARJOUKSET</a></li>
+        </ul>
+    </nav>
+
+<section>
+   
+    <article>
+        <img src="../images/AutoValikMusta.jpg" alt="XDV B3 SUV Musta" onclick="scrollToSection('section1')">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Tietoja</th>
+                <th scope="col">XDV B3 SUV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Hinta</th>
+                <td>95 000€</td>
+
+              </tr>
+              <tr>
+                <th scope="row">Teho</th>
+                <td>375 Hv</td>
+
+              </tr>
+              <tr>
+                <th scope="row">Vuosimalli</th>
+                <td>2021</td>
+              </tr>
+              <tr>
+                <th scope="row">Mittarilukema</th>
+                <td>25 000 km</td>
+              </tr>
+              <tr>
+                <th scope="row">Väri</th>
+                <td>Metallinhohto Musta</td>
+              </tr>
+            </tbody>
+          </table>
+    </article>
+   
+    <article>
+        <img src="../images/AutoValikHarm.jpg" alt="Cruiser SS12 Harmaa" onclick="scrollToSection('section2')">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Tietoja</th>
+                <th scope="col">Cruiser SS12</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Hinta</th>
+                <td>250 000€</td>
+
+              </tr>
+              <tr>
+                <th scope="row">Teho</th>
+                <td>550 Hv</td>
+
+              </tr>
+              <tr>
+                <th scope="row">Vuosimalli</th>
+                <td>1999</td>
+              </tr>
+              <tr>
+                <th scope="row">Mittarilukema</th>
+                <td>47 000 km</td>
+              </tr>
+              <tr>
+                <th scope="row">Väri</th>
+                <td>Metallinhohto Harmaa</td>
+              </tr>
+            </tbody>
+          </table>
+    </article>
+
+    <article>
+        <img src="../images/AutoValikKelt.jpg" alt="VelocityX Keltainen" onclick="scrollToSection('section3')">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Tietoja</th>
+                <th scope="col">VelocityX</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Hinta</th>
+                <td>700 000€</td>
+
+              </tr>
+              <tr>
+                <th scope="row">Teho</th>
+                <td>775 Hv</td>
+
+              </tr>
+              <tr>
+                <th scope="row">Vuosimalli</th>
+                <td>2024</td>
+              </tr>
+              <tr>
+                <th scope="row">Mittarilukema</th>
+                <td>0 km</td>
+              </tr>
+              <tr>
+                <th scope="row">Väri</th>
+                <td>Metallinhohto Keltainen</td>
+              </tr>
+            </tbody>
+          </table>
+    </article>
+
+</section>
+
+<p id="section1">
+    <img src="../images/AutoValikMusta.jpg" alt="XDV B3 SUV Musta">
+</p>
+
+<p id="section2">
+    <img src="../images/AutoValikHarm.jpg" alt="Cruiser SS12 Harmaa">
+</p>
+
+<p id="section3">
+    <img src="../images/AutoValikKelt.jpg" alt="VelocityX Keltainen">
+</p>
+
+
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
