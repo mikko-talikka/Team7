@@ -110,6 +110,11 @@ background-color: rgb(35, 34, 34);
     footer p, footer h2 {
             margin: 5px;
         }
+        .valit {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         .vali {
             display: flex;
             justify-content: space-between;
