@@ -12,7 +12,8 @@ Etusivun header
 Valikoima sivu (Pois lukien header ja footer, jotka ovat samoja joka sivulla)
 Etusivun tekstiosan
 ### Arttu
-
+Ostotarjous sivu (pois lukien header joka on sama kuin etusivulla)
+Etusivun footer
 (nimien alle mitä kukakin on sivulla tehnyt
 esim.
 - index.html top menu items

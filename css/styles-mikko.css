@@ -1,3 +1,5 @@
+/**/
+
 .headerHuolto{
     display: flex;
     background-color: rgb(75, 75, 75);
@@ -7,7 +9,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .h1Huolto{
-    font-size: 80px;
+    font-size: 60px;
 }
 .navHuolto{
     display: flex;
@@ -15,14 +17,13 @@
     padding: 0.5em;
     place-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
 }
 .navUlHuolto{
     list-style: none;
 }
 .liHuolto{
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
 }
 .aHuolto{
     text-decoration: none;
@@ -69,7 +70,7 @@ form.formHuolto{
     background-color: rgb(245, 245, 245);
 }
 .topPartIndex{
-    background-image: url('../images/autoTie3.jpg');
+    background-image: url('../images/autoOranssi169.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -106,8 +107,9 @@ form.formHuolto{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     background-color: rgb(245, 245, 245);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .h2Index{
     font-size: 60px;
