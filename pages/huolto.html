@@ -29,60 +29,26 @@
                 <label for="formControlInput" class="form-label">Nimi</label>
                 <input type="text" class="form-control" id="formControlInput" placeholder="Mikko Mallikas" name="varaajanNimi" required minlength="4" maxlength="30">
                 <label for="formControlInput" class="form-label">Puhelin</label>
-                <input type="number" class="form-control" id="formControlInput" placeholder="0501234567" name="varaajanPuhelin" required minlength="7" maxlength="12">
+                <input type="number" class="form-control" id="formPhoneInput" placeholder="0501234567" name="varaajanPuhelin">
                 <label for="formControlInput" class="form-label">Sähköposti</label>
-                <input type="email" class="form-control" id="formControlInput" placeholder="nimi@esimerkki.fi" name="varaajanEmail">
+                <input type="email" class="form-control" id="formEmailInput" placeholder="nimi@esimerkki.fi" name="varaajanEmail">
                 <label for="formControlInput" class="form-label">Huollon päivämäärä</label>
-                <input type="date" class="form-control" id="formControlInput" name="huollonPvm">
+                <input type="date" class="form-control" id="formDateInput" name="huollonPvm">
                 <label for="formControlInput" class="form-label">Huollon kellonaika</label>
-                <input type="time" class="form-control" id="formControlInput" name="huollonKlo">
+                <input type="time" class="form-control" id="formTimeInput" name="huollonKlo">
                 <label for="formControlInput" class="form-label">Viesti huollolle (tarvittaessa)</label>
-                <input type="text" class="form-control" id="formControlInput" placeholder="Tarvitsen sijaisauton huollon ajaksi. Mielellään merkkiä Ferrari. Lisäksi haluan, että auto noudetaan huoltoon pihastani ja palautetaan samaan paikkaan." name="viestiHuollolle"><br>
+                <input type="text" class="form-control" id="formMessageInput" placeholder="Tarvitsen sijaisauton huollon ajaksi. Mielellään merkkiä Ferrari. Lisäksi haluan, että auto noudetaan huoltoon pihastani ja palautetaan samaan paikkaan." name="viestiHuollolle"><br>
                 <button type="submit" class="btn btn-primary">Varaa</button>
             </form>
         </section>
     </main>
     <footer>
-        <style>
-            footer{
-                background-color: rgb(74, 73, 73);
-                font-family: Arial, Helvetica, sans-serif;
-                display: flex;
-                flex-direction: column;
-                color: white;
-            }
-            footer h2{
-                text-align: right;
-                font-size: medium;
-            }
-            footer section{
-        background-color: rgb(35, 34, 34);
-            }
-            footer a{
-                text-align: right;
-                margin: 20px 15px; 
-                color: white;
-            }
-            footer h3{
-                margin: 20px 10px; 
-            }
-            footer h2{
-                text-align: center;
-            }
-            footer p, footer h2 {
-                    margin: 5px;
-                }
-                .vali {
-                    display: flex;
-                    justify-content: space-between;
-                }
-        </style>
         <p>Yhteystiedot:</p>
          <p>  Kalliit autot:</p>
           <div class="vali">
            <p> luke.luksus@luxcar.com </p>
-           <h2>Sijaninti:<li><a href="https://maps.app.goo.gl/Kyxrey4D3kAgi2TR6">
-            Presidentinlinna Mariankatu 2 00170 Helsinki</a></li></h2>
+           <h2>Sijaninti:<a href="https://maps.app.goo.gl/Kyxrey4D3kAgi2TR6">
+            Presidentinlinna Mariankatu 2 00170 Helsinki</a></h2>
           </div>
          <p>   Halvat autot:</p>
           <p>  hannu.halpa@luxcar.com </p>
