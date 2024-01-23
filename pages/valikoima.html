@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxcar - Valikoima</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="../css/styles-eemeli.css">
 </head>
 <body>
-    <header>
-        <h1>Luxcar</h1>
+    <header class="headerValikoima">
+        <h1 class="h1Valikoima">LUXCAR</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">ETUSIVU</a></li>
-            <li><a href="pages/valikoima.html">VALIKOIMA</a></li>
-            <li><a href="pages/huolto.html">HUOLTO</a></li>
-            <li><a href="pages/ostotarjoukset.html">OSTOTARJOUKSET</a></li>
+    <nav class="navValikoima">
+        <ul class="navUlValikoima">
+            <li class="liValikoima"><a class="aValikoima" href="../index.html">ETUSIVU</a></li>
+            <li class="liValikoima"><a class="aValikoima" href="valikoima.html">VALIKOIMA</a></li>
+            <li class="liValikoima"><a class="aValikoima" href="huolto.html">HUOLTO</a></li>
+            <li class="liValikoima"><a class="aValikoima" href="ostotarjoukset.html">OSTOTARJOUKSET</a></li>
         </ul>
     </nav>
 <main>
-    <h2>Valikoima</h2>
-    <p>Meidän valikoimastamme löytyy uusia ja vähän käytettyjä luksusautoja. Autot ovat erinomaisessa kunnossa ja ne ovat tarkastus huollettu aina ennen myyntiin laittoa.</p>
-    <p>Pidä silmällä valikoimaamme, autoja lisätään ja myydään nopeaan tahtiin.</p>
-    <p>Yhteystiedot myynti:</p>
-    <address>
+    <h2 class="h2Valikoima">Valikoima</h2>
+    <p class="pValikoima">Meidän valikoimastamme löytyy uusia ja vähän käytettyjä luksusautoja.<br>
+    Autot ovat erinomaisessa kunnossa ja ne ovat tarkastus huollettu aina ennen myyntiin laittoa.<br>
+    Pidä silmällä valikoimaamme, autoja lisätään ja myydään nopeaan tahtiin.<br></p>
+    <p class="pValikoima"><strong>Yhteystiedot myynti:</strong></p>
+    <address class="pValikoima">
         <p>Luke Luksus</p>
 <a href="mailto:luke.luksus@luxcar.com">luke.luksus@luxcar.com</a>
 <br>
@@ -33,7 +34,7 @@
 <section>
 <!--Autojen pikakuvakkeet-->
     <article>
-        <img src="../images/AutoValikMusta.jpg" alt="XDV B3 SUV Musta" onclick="scrollToSection('section1')">
+        <img src="../images/AutoValikMustaSmall.jpg" alt="XDV B3 SUV Musta" onclick="scrollToSection('section1')">
         <h3>XDV B3 SUV</h3>
         <table class="table">
             <thead>
@@ -70,7 +71,7 @@
     </article>
    
     <article>
-        <img src="../images/AutoValikHarm.jpg" alt="Cruiser SS12 Harmaa" onclick="scrollToSection('section2')">
+        <img src="../images/AutoValikHarmaaSmall.jpg" alt="Cruiser SS12 Harmaa" onclick="scrollToSection('section2')">
         <h2>Cruiser SS12</h2>
         <table class="table">
             <thead>
@@ -107,7 +108,7 @@
     </article>
 
     <article>
-        <img src="../images/AutoValikKelt.jpg" alt="VelocityX Keltainen" onclick="scrollToSection('section3')">
+        <img src="../images/AutoValikKeltSmall.jpg" alt="VelocityX Keltainen" onclick="scrollToSection('section3')">
         <h2>VelocityX</h2>
         <table class="table">
             <thead>
@@ -148,8 +149,26 @@
 <!--Autojen tarkemmat tiedot-->
 
 <p id="section1">
-    <img src="../images/AutoValikMusta.jpg" alt="XDV B3 SUV Musta">
+    <img src="../images/AutoValikMustaPieni.jpg" alt="XDV B3 SUV Musta">
     <h2>XDV B3 SUV</h2>
+    <ul>
+      <li><h3 class="h3Valikoima">Lisävarusteet</h3></li>
+      <li>Premium Materials</li>
+      <li>Advanced Technology</li>
+      <li>Driver Assistance Systems</li>
+      <li>Comfortable Seating</li>
+      <li>Luxurious Interior Design</li>
+      <li>High-End Audio System</li>
+      <li>Powerful Engines</li>
+      <li>Advanced Suspension Systems</li>
+      <li>Large Infotainment Screen</li>
+      <li>Customization Options</li>
+      <li>Panoramic Sunroof</li>
+      <li>Advanced Lighting Systems</li>
+      <li>Gesture Control</li>
+      <li>Wireless Charging</li>
+      <li>All-Wheel Drive</li>
+    </ul>
     <table class="table">
         <thead>
           <tr>
@@ -193,30 +212,13 @@
             <td>Automaatti</td>
           </tr>
         </tbody>
-      </table>
-      <list>  
-        <ul>
-        <li><h3>Premium Materials:</h3></li>
-        <li><h3>Advanced Technology:</h3></li>
-        <li><h3>Driver Assistance Systems:</h3></li>
-        <li><h3>Comfortable Seating:</h3></li>
-        <li><h3>Luxurious Interior Design:</h3></li>
-        <li><h3>High-End Audio System:</h3></li>
-        <li><h3>Powerful Engines:</h3></li>
-        <li><h3>Advanced Suspension Systems:</h3></li>
-        <li><h3>Large Infotainment Screen:</h3></li>
-        <li><h3>Customization Options:</h3></li>
-        <li><h3>Panoramic Sunroof:</h3></li>
-        <li><h3>Advanced Lighting Systems:</h3></li>
-        <li><h3>Gesture Control:</h3></li>
-        <li><h3>Wireless Charging:</h3></li>
-        <li><h3>All-Wheel Drive:</h3></li>
-      </ul>
-    </list>
+
+      </table> 
+
 </p>
 
 <p id="section2">
-    <img src="../images/AutoValikHarm.jpg" alt="Cruiser SS12 Harmaa">
+    <img src="../images/AutoValikHarmaaPieni.jpg" alt="Cruiser SS12 Harmaa">
     <h2>Cruiser SS12</h2>
     <table class="table">
         <thead>
@@ -260,26 +262,25 @@
           <td>Manuaali</td>
         </tbody>
       </table>
-      <list>
         <ul>
-            <li><h3>Classic Design:</h3></li>
-            <li><h3>Timeless Interior:</h3></li>
-            <li><h3>Vintage Technology:</h3></li>
-            <li><h3>Iconic Performance:</h3></li>
-            <li><h3>Leather Upholstery:</h3></li>
-            <li><h3>Manual Transmission:</h3></li>
-            <li><h3>Retractable Soft Top:</h3></li>
-            <li><h3>Wooden Accents:</h3></li>
-            <li><h3>Classic Instrument Cluster:</h3></li>
-            <li><h3>Heritage Badge:</h3></li>
-            <li><h3>Limited Edition:</h3></li>
-            <li><h3>Historical Charm:</h3></li>
+            <li><h3 class="h3Valikoima">Lisävarusteet:</h3></li>
+            <li>Classic Design</li>
+            <li>Timeless Interior</li>
+            <li>Vintage Technology</li>
+            <li>Iconic Performance</li>
+            <li>Leather Upholstery</li>
+            <li>Manual Transmission</li>
+            <li>Retractable Soft Top</li>
+            <li>Wooden Accents</li>
+            <li>Classic Instrument Cluster</li>
+            <li>Heritage Badge</li>
+            <li>Limited Edition</li>
+            <li>Historical Charm</li>
           </ul>
-      </list>
 </p>
 
 <p id="section3">
-    <img src="../images/AutoValikKelt.jpg" alt="VelocityX Keltainen">
+    <img src="../images/AutoValikKeltPieni.jpg" alt="VelocityX Keltainen">
     <h2>VelocityX</h2>
     <table class="table">
         <thead>
@@ -323,23 +324,24 @@
           <td>Automaatti</td>
         </tbody>
       </table>
-      <list>
+
         <ul>
-            <li><h3>Futuristic Design:</h3></li>
-            <li><h3>State-of-the-Art Technology:</h3></li>
-            <li><h3>High-Performance Engine:</h3></li>
-            <li><h3>Carbon Fiber Construction:</h3></li>
-            <li><h3>Aerodynamic Enhancements:</h3></li>
-            <li><h3>Track-Ready Suspension:</h3></li>
-            <li><h3>Driver-Centric Cockpit:</h3></li>
-            <li><h3>Advanced Aerodynamics:</h3></li>
-            <li><h3>Exotic Materials:</h3></li>
-            <li><h3>Touchscreen Infotainment:</h3></li>
-            <li><h3>Hybrid Technology:</h3></li>
-            <li><h3>Exclusive Limited Production:</h3></li>
-            <li><h3>Autonomous Driving Features:</h3></li>
-          </ul>
-      </list>
+          <li><h3 class="h3Valikoima">Lisävarusteet</h3></li>
+          <li>Futuristic Design</li>
+          <li>State-of-the-Art Technology</li>
+          <li>High-Performance Engine</li>
+          <li>Carbon Fiber Construction</li>
+          <li>Aerodynamic Enhancements</li>
+          <li>Track-Ready Suspension</li>
+          <li>Driver-Centric Cockpit</li>
+          <li>Advanced Aerodynamics</li>
+          <li>Exotic Materials</li>
+          <li>Touchscreen Infotainment</li>
+          <li>Hybrid Technology</li>
+          <li>Exclusive Limited Production</li>
+          <li>Autonomous Driving Features</li>
+        </ul>
+        
 </p>
 
 </main>
