@@ -108,3 +108,9 @@ background-color: rgb(35, 34, 34);
             display: flex;
             justify-content: space-between;
         }
+    .Ostoimg {
+        flex-grow: 1;
+        flex-shrink: 1;
+        max-width: 30%; 
+        margin-right: 15px;
+    }
