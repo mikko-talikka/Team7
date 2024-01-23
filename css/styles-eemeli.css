@@ -45,10 +45,15 @@ a:hover{
     text-decoration: none;
 
 }
+.h2ValikoimaOtsikko{
+  font-size: 30px;
+  text-align: center;
+  padding: 0.8em;
+}
 .h2Valikoima{
     font-size: 30px;
    
-    text-align: center;
+    text-align: left;
     padding: 0.8em;
 }
 .pValikoima{
@@ -84,37 +89,21 @@ article {
 
 /*Ajoneuovjen tiedot */
 
-#section1 {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  #section1 > * {
-    box-sizing: border-box;
-    padding: 0 20px; 
-    width: 50%;
-  }
-  
-  #section1 img {
-    max-width: 50%;
-  }
-  
-  @media (min-width: 768px) {
-    #section1 img {
-      max-width: 25%;
-      order: 1;
-    }
-  
-    #section1 > ul {
-      flex: 1;
-      order: 2;
-    }
-  
-    #section1 table {
-      order: 3;
-      width: 50%;
-    }
-  }
+.car-details-container {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: auto;
+}
+
+.car-image {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.car-info {
+  flex: 2;
+}
+
   
   /* Footer*/
 

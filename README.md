@@ -1,7 +1,6 @@
 # Team7
 
 ## Verkkosivu mielikuvitukselliselle luksusautoja myyvälle yritykselle
-About your Website (finnish or english) 
 
 https://mikko-talikka.github.io/Team7/
 
@@ -9,11 +8,12 @@ https://mikko-talikka.github.io/Team7/
 Huolto sivu (pois lukien footer, joka sama joka sivulla)
 Etusivun header
 ### Eemeli
+Loi valokuvat
 Valikoima sivu (Pois lukien header ja footer, jotka ovat samoja joka sivulla)
 Etusivun tekstiosan
-### Arttu
+styles-eemeli css tiedosto
 
-(nimien alle mitä kukakin on sivulla tehnyt
-esim.
-- index.html top menu items
-- sivu1.html kokonaan yms.)
+### Arttu
+Ostotarjous sivu (pois lukien header joka on sama kuin etusivulla)
+Etusivun footer
+

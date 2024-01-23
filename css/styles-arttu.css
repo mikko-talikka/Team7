@@ -59,7 +59,7 @@ a:hover{
           margin-left: 10px;
       }
       button[type=submit] {
-        width: 100%;
+        width: 50%;
         background-color: #429fc1;
         color: white;
         padding: 14px 20px;
@@ -67,10 +67,44 @@ a:hover{
         border: none;
         border-radius: 4px;
         cursor: pointer;
-       
       }
-      
+      main header, main p {
+        text-align: center;
+        margin-top: 20px ;
+      }
       main div {
         border-radius: 5px;
         padding-right: 5%;
       }    
+      footer{
+        background-color: rgb(74, 73, 73);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    footer h2{
+        text-align: right;
+        font-size: medium;
+    }
+    footer section{
+background-color: rgb(35, 34, 34);
+    }
+    footer a{
+        text-align: right;
+        margin: 20px 15px; 
+        color: white;
+    }
+    footer h3{
+        margin: 20px 10px; 
+    }
+    footer h2{
+        text-align: center;
+    }
+    footer p, footer h2 {
+            margin: 5px;
+        }
+        .vali {
+            display: flex;
+            justify-content: space-between;
+        }
