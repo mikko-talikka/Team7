@@ -114,6 +114,11 @@ background-color: rgb(35, 34, 34);
             display: flex;
             justify-content: space-between;
         }
+        .valit {
+            display: flex;
+            
+            flex-direction: row;
+        }
     .Ostoimg {
         flex-grow: 1;
         flex-shrink: 1;
