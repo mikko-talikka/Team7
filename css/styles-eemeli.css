@@ -1,0 +1,121 @@
+/*Header + esittely*/
+main{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li {
+    list-style: none;
+}
+.headerValikoima{
+    display: flex;
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    padding: 2em;
+    place-content: center;
+
+}
+.h1Valikoima{
+    font-size: 60px;
+}
+.navValikoima{
+    display: flex;
+    background-color: rgb(61, 61, 61);
+    padding: 0.5em;
+    place-content: center;
+
+}
+.navUlValikoima{
+    list-style: none;
+}
+.liValikoima{
+    display: inline-block;
+    margin: 10px;
+}
+.aValikoima{
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(214, 205, 205);
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+.aValikoima1{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+
+}
+.h2Valikoima{
+    font-size: 30px;
+   
+    text-align: center;
+    padding: 0.8em;
+}
+.pValikoima{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+/*Pikakuvakkeet*/
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+  margin-right: 40px; 
+  align-items: center;
+  text-align: center;
+}
+
+table {
+  width: 50%;
+} 
+
+@media (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+  
+    article {
+      margin-right: 0;
+      margin-bottom: 20px;
+      margin: 20px;
+    }
+}
+
+/*Ajoneuovjen tiedot */
+
+#section1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#section1 > * {
+  box-sizing: border-box;
+  padding: 0 20px; 
+  width: 100%;
+}
+
+#section1 img {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  #section1 img {
+    max-width: 50%;
+    order: 1;
+  }
+
+  #section1 > div {
+    flex: 1;
+    order: 2;
+  }
+
+  #section1 .ValikoimaUl {
+    order: 3;
+  }
+
+  #section1 table {
+    order: 4;
+  }
+}
