@@ -7,7 +7,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .h1Huolto{
-    font-size: 60px;
+    font-size: 80px;
 }
 .navHuolto{
     display: flex;
@@ -15,6 +15,7 @@
     padding: 0.5em;
     place-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 .navUlHuolto{
     list-style: none;
@@ -67,14 +68,12 @@ form.formHuolto{
 .mainHuolto{
     background-color: rgb(245, 245, 245);
 }
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url('../images/autoTie2.jpg');
+.topPartIndex{
+    background-image: url('../images/autoTie3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
-header{
+.headerIndex{
     display: flex;
     place-content: center;
     color: rgb(255, 255, 255);
@@ -84,21 +83,46 @@ header{
 .h1Index{
     font-size: 90px;
 }
-nav {
+.navIndex{
     display: flex;
     place-content: center;
+    padding-bottom: 650px;
 }
-nav ul{
+.navUlIndex{
     list-style: none;
 }
-nav li{
+.navLiIndex{
     display: inline-block;
     margin: 40px;
 }
-nav a{
+.navAindex{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(245, 245, 245);
+}
+.h2Index{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 60px;
+}
+.sectionIndex{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+}
+.imgIndex{
+    max-width: 600px;
+    max-height: 600px;
+    padding: 10px;
+    margin-top: 50px;
 }
