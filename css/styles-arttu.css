@@ -68,7 +68,7 @@ a:hover{
         border-radius: 4px;
         cursor: pointer;
       }
-      main h, main p {
+      main header, main p {
         text-align: center;
         margin-top: 20px ;
       }
