@@ -45,6 +45,11 @@ a:hover{
     text-decoration: none;
 
 }
+.h2ValikoimaOtsikko{
+  font-size: 30px;
+  text-align: center;
+  padding: 0.8em;
+}
 .h2Valikoima{
     font-size: 30px;
    
