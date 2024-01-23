@@ -9,5 +9,122 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<nav>
+
+</nav>
+<main>
+    <style>
+        form, main p{
+         margin-left: 10px; 
+         margin-bottom: 10px;
+        }
+    </style>
+    <p>Jos haluat myydä autosi meille, vastaa tähän lyhyeen kyselyyn niin meidän sisäänostaja ottaa teihin yhteyttä.</p>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="rekkari">Rekisterinumero*</label>
+            <input type="text" class="form-control" id="rekkari" placeholder="OOO-000" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="numero">Puhelinnumero*</label>
+            <input type="tel" class="form-control" id="numero" placeholder="+35800000000" required>
+          </div>
+        </div>
+        <div class="form-group">
+         <div class="form-group col-md-6">
+          <label for="email">Email*</label>
+          <input type="email" class="form-control" id="email" placeholder="email@gmail.com" required>
+        </div>
+        <div class="form-group">
+         <div class="form-group col-md-6">
+          <label for="name">Koko nimesi*</label>
+          <input type="text" class="form-control" id="name" placeholder="Jaakko Jaakkola" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="rahamäärä">Haluamasi raha autosta</label>
+            <input type="text" class="form-control" id="rahamäärä">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="Kilometri">Kilometri määrä*</label>
+            <select id="Kilometri" class="form-control">
+              <option selected>
+              <option>0-5 000</option><option>5 000-20 000</option><option>20 000-50 000</option><option>50 000-80 000</option><option>80 000-110 000</option><option>110 000-150 000</option><option>150 000+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Haluatko että auto haetaan kotoasi?
+            </label>
+          </div>
+        </div>
+        <p> Kentät joissa on * merkki vastaus on pakollinen.</p>
+        <button type="submit" class="btn btn-primary">Lähetä</button>
+      </form>
+</main>
+<footer>
+<style>
+    footer{
+        background-color: rgb(74, 73, 73);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    footer h2{
+        text-align: right;
+        font-size: medium;
+    }
+    footer section{
+background-color: rgb(35, 34, 34);
+    }
+    footer a{
+        text-align: right;
+        margin: 20px 15px; 
+        color: white;
+    }
+    footer h3{
+        margin: 20px 10px; 
+    }
+    footer h2{
+        text-align: center;
+    }
+    footer p, footer h2 {
+            margin: 5px;
+        }
+        .vali {
+            display: flex;
+            justify-content: space-between;
+        
+        }
+    
+    
+</style>
+<p>Yhteystiedot:</p>
+
+ <p>  Kalliit autot:</p>
+  <div class="vali">
+   <p> luke.luksus@luxcar.com </p>
+   
+   <h2>Sijaninti:<li><a href="https://maps.app.goo.gl/Kyxrey4D3kAgi2TR6">
+    Presidentinlinna Mariankatu 2 00170 Helsinki</a></li></h2>
+  </div>
+ <p>   Halvat autot:</p>
+  <p>  hannu.halpa@luxcar.com </p>
+ 
+    <p>Huolto:</p>
+   <p> kalle.korjaaja@luxcar.com</p>
+<section>
+    <div class="vali">
+     <h3>@Luxcar</h3>
+     <a href="#top">Takaisin ylös</a>
+    </div>
+</section>
+
+</footer>
 </body>
 </html>
