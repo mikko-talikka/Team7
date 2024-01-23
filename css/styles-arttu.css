@@ -7,7 +7,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .h1Osto{
-    font-size: 80px;
+    font-size: 60px;
 }
 .navOsto{
     display: flex;
@@ -15,14 +15,13 @@
     padding: 0.5em;
     place-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
 }
 .navUlOsto{
     list-style: none;
 }
 .liOsto{
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
 }
 .aOsto{
     text-decoration: none;
