@@ -86,36 +86,34 @@ table {
 /*Ajoneuovjen tiedot */
 
 #section1 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#section1 > * {
-  box-sizing: border-box;
-  padding: 0 20px; 
-  width: 100%;
-}
-
-#section1 img {
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #section1 > * {
+    box-sizing: border-box;
+    padding: 0 20px; 
+    width: 100%;
+  }
+  
   #section1 img {
-    max-width: 50%;
-    order: 1;
+    max-width: 100%;
   }
-
-  #section1 > div {
-    flex: 1;
-    order: 2;
+  
+  @media (min-width: 768px) {
+    #section1 img {
+      max-width: 50%;
+      order: 1;
+    }
+  
+    #section1 > ul {
+      flex: 1;
+      order: 2;
+    }
+  
+    #section1 table {
+      order: 3;
+      width: 50%;
+    }
   }
-
-  #section1 .ValikoimaUl {
-    order: 3;
-  }
-
-  #section1 table {
-    order: 4;
-  }
-}
+  
