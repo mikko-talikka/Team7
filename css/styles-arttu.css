@@ -131,9 +131,4 @@ background-color: rgb(35, 34, 34);
         max-height: 200px;
         margin-right: 20px;
     }
-    .no-margin-bottom {
-        margin-bottom: 0;
-      }
-    .no-margin-top {
-        margin-top: 0;
-    }
+    
