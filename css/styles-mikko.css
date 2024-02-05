@@ -167,3 +167,8 @@ footer p, footer h2 {
     display: flex;
     justify-content: space-between;
 }
+.valit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
