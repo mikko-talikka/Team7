@@ -24,7 +24,7 @@
     <header><strong>Myy autosi meille</strong></header>
     <p>Jos haluat myydä autosi meille, vastaa tähän lyhyeen kyselyyn niin meidän sisäänostaja ottaa teihin yhteyttä. 
         Etsimme luksus autoja mutta voit ehdottaa myös jokapäiväisiä autoja.</p>
-      <form>
+      <form >
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="rekkari">Rekisterinumero*</label>
@@ -57,6 +57,15 @@
               <option>0-5 000</option><option>5 000-20 000</option><option>20 000-50 000</option><option>50 000-80 000</option><option>80 000-110 000</option><option>110 000-150 000</option><option>150 000+</option>
             </select>
           </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lisätietoja">Lisätietoja autosta</label>
+          <input type="text" class="textbox" id="lisätietoja" placeholder="Auto on hyvässä kunnossa jne.">
+        </div>
+        <div>
+          <label>Lisää vielä kuva autostasi</label>
+          <input type="file" id="myFile" name="filename">
+          <input type="submit">
         </div>
         <div class="form-group">
           <div class="form-check">
