@@ -24,7 +24,7 @@
     <header><strong>Myy autosi meille</strong></header>
     <p>Jos haluat myydä autosi meille, vastaa tähän lyhyeen kyselyyn niin meidän sisäänostaja ottaa teihin yhteyttä. 
         Etsimme luksus autoja mutta voit ehdottaa myös jokapäiväisiä autoja.</p>
-      <form >
+      <form action="php/email.php" method="post">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="rekkari">Rekisterinumero*</label>
@@ -65,15 +65,6 @@
         <div>
           <label>Lisää vielä kuva autostasi</label>
           <input type="file" id="myFile" name="filename">
-          <input type="submit">
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-                Haluatko että auto haetaan kotoasi?
-            </label>
-          </div>
         </div>
         <p2> Kentät joissa on * merkki vastaus on pakollinen.</p2>
         <button type="submit" class="btn btn-primary">Lähetä</button>
