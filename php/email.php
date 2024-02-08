@@ -7,9 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send email
     if (mail($to_email, $subject, $message, $headers)) {
-        echo "Email sent successfully to $to_email";
+        echo "Email lähetetty $to_email";
     } else {
-        echo "Failed to send email.";
+        echo "Email lähetys ei onnistunut.";
     }
 } else {
     // Redirect back to the form if accessed directly
