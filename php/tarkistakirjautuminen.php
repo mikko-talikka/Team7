@@ -13,7 +13,7 @@ else {
 $yhteys=mysqli_connect("localhost", "", "");
 $tietokanta=mysqli_select_db($yhteys, "tietokannannimi");
 
-$sql="select * from tietokannanimi where tunnus=? and salasana=md5(?)";
+$sql="select * from ostotarjoukset where tunnus=? and salasana=md5(?)";
 $stmt=mysqli_prepare($yhteys, $sql);
 mysqli_stmt_bind_param($stmt, "ss", $tunnus, $salasana);
 
