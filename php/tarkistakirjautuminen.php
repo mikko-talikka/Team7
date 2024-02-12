@@ -21,7 +21,7 @@ $initials=parse_ini_file("./.ht.asetukset.ini");
             }
 $tietokanta=mysqli_select_db($yhteys, "web_trtkp23_7");
 
-$sql="select * from ostotarjoukset where tunnus=? and salasana=md5(?)";
+$sql="select * from tunnukset where tunnus=? and salasana=md5(?)";
 $stmt=mysqli_prepare($yhteys, $sql);
 mysqli_stmt_bind_param($stmt, "ss", $tunnus, $salasana);
 
