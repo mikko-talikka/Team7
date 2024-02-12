@@ -10,8 +10,16 @@ else {
     exit;
 }
 
-$yhteys=mysqli_connect("localhost", "", "");
-$tietokanta=mysqli_select_db($yhteys, "tietokannannimi");
+$initials=parse_ini_file("./.ht.asetukset.ini");
+            
+            try{
+                $yhteys=mysqli_connect($initials["palvelin"], $initials["tunnus"] , $initials["pass"], $initials["tk"]);
+            }
+            catch(Exception $e){
+                header("Location:./yhteysvirhe.html");
+                exit;
+            }
+$tietokanta=mysqli_select_db($yhteys, "web_trtkp23_7");
 
 $sql="select * from ostotarjoukset where tunnus=? and salasana=md5(?)";
 $stmt=mysqli_prepare($yhteys, $sql);
