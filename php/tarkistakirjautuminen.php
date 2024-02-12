@@ -6,7 +6,7 @@ if (isset($_POST["tunnus"]) && isset($_POST["salasana"])) {
     $salasana=$_POST["salasana"];
 }
 else {
-    header("Location:hallinnointisivu.html");
+    header("Location:kirjaudu.php");
     exit;
 }
 
@@ -30,7 +30,7 @@ $tulos=mysqli_stmt_get_result($stmt);
 
 if ($rivi=mysqli_fetch_object($tulos)) {
     $_SESSION["user_ok"]="ok";
-    header("Location:".$_SESSION["paluuosoite"]);
+    header("Location:".$_SESSION["ostotarjouksetHallinnointisivu.php"]);
     exit;
 }
 else {
