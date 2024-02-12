@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/styles-mikko.css">
 </head>
 <body>
+    <?php
+    include ("./vaatiikirjautumisen.php");
+    ?>
     <header class="headerOsto">
         <h1 class="h1Osto">LUXCAR</h1>
         <h2 class="h2Osto">Henkilökunnan hallinnointisivu</h2>

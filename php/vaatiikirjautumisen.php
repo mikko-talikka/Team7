@@ -9,3 +9,5 @@ if (!isset($_SESSION["user_ok"])){
 }
 
 print "Sivusto vaatiikirjautumisen.php"
+
+?>

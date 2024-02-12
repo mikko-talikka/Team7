@@ -27,10 +27,10 @@ else {
     $name="";
 }
 if (isset($_POST["rahamäärä"])){
-    $rahamäärä=$_POST["rahamäärä"];
+    $rahamaara=$_POST["rahamäärä"];
 }
 else {
-    $rahamäärä="";
+    $rahamaara="";
 }
 if (isset($_POST["kilometri"])){
     $kilometri=$_POST["kilometri"];
@@ -39,10 +39,10 @@ else {
     $kilometri="";
 }
 if (isset($_POST["lisätietoja"])){
-    $lisätietoja=$_POST["lisätietoja"];
+    $lisatietoja=$_POST["lisätietoja"];
 }
 else {
-    $lisätietoja="";
+    $lisatietoja="";
 }
 if (isset($_POST["kuva"])){
     $kuva=$_POST["kuva"];
@@ -52,17 +52,17 @@ else {
 }
 // Yhteys tietokantaan
 
-$yhteys=mysqli_connect("localhost", "kayttaja", "salasana");
+$yhteys=mysqli_connect("localhost", "trtkp23_7", "WKEsBVEP", "web_trtkp23_7");
 if (!$yhteys){
     die("Yhteyttä ei voitu muodostaa ".mysqli_error());
 }
-$tietokanta=mysqli_select_db($yhteys, "ostotarjoukset");
+$tietokanta=mysqli_select_db($yhteys, "web_trtkp23_7");
 if (!$tietokantas){
     die("Tietokannan valinta epäonnistui ".mysqli_error());
 }
 $sql="insert into ostotarjoukset(rekisterinumero, puhelinnumero, email, kokonimi, raha, kilometrilukema, lisatieto, kuva) values (?, ?, ?, ?, ?, ?, ?)";
 $stmt=mysqli_prepare($yhteys, $sql);
-mysqli_stmt_bind_param($stmt, 'sissiiss',$rekkari,  $numero, $email, $name, $rahamäärä, $kilometri, $lisätietoja, $kuva);
+mysqli_stmt_bind_param($stmt, 'sissiiss',$rekkari,  $numero, $email, $name, $rahamaara, $kilometri, $lisatietoja, $kuva);
 mysqli_stmt_execute($stmt);
 mysqli_stmt_close($stmt);
 mysqli_close($yhteys);
