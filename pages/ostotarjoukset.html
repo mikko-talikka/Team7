@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Luxury Cars, new and pre-owned cars, Helsinki, car offer, Luksusautoja, uusia ja käytettyjä, ostotarjoukset">
     <title>Luxcar - Ostotarjoukset</title>
-    <!--Scripti formia varten-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles-arttu.css">
 </head>
@@ -27,43 +24,43 @@
     <header><strong>Myy autosi meille</strong></header>
     <p>Jos haluat myydä autosi meille, vastaa tähän lyhyeen kyselyyn niin meidän sisäänostaja ottaa teihin yhteyttä. 
         Etsimme luksus autoja mutta voit ehdottaa myös jokapäiväisiä autoja.</p>
-      <form id="asiakasform" action="php/email.php" method="post">
+      <form id="asiakasform" action="../php/tallennaForm.php" method="post">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="rekkari">Rekisterinumero*</label>
-            <input type="text" class="form-control" id="rekkari" placeholder="OOO-000" required>
+            <input type="text" class="form-control" name="rekisterinumero"placeholder="OOO-000" required>
           </div>
           <div class="form-group col-md-6">
             <label for="numero">Puhelinnumero*</label>
-            <input type="tel" class="form-control" id="numero" placeholder="+35800000000" required>
+            <input type="tel" class="form-control" name="puhelinnumero" placeholder="+35800000000" required>
           </div>
         </div>
         <div class="form-group">
          <div class="form-group col-md-6">
           <label for="email">Email*</label>
-          <input type="email" class="form-control" id="email" placeholder="email@gmail.com" required>
+          <input type="email" class="form-control" name="email" placeholder="email@gmail.com" required>
         </div>
         <div class="form-group">
          <div class="form-group col-md-6">
           <label for="name">Koko nimesi*</label>
-          <input type="text" class="form-control" id="name" placeholder="Jaakko Jaakkola" required>
+          <input type="text" class="form-control" name="kokonimi" placeholder="Jaakko Jaakkola" required>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="rahamäärä">Haluamasi raha autosta</label>
-            <input type="text" class="form-control" id="rahamäärä">
+            <input type="text" class="form-control" name="raha">
           </div>
           <div class="form-group col-md-4">
             <label for="Kilometri">Kilometri määrä*</label>
-            <select id="Kilometri" class="form-control">
+            <select name="kilometrilukema" class="form-control">
               <option selected>
-              <option>0-5 000</option><option>5 000-20 000</option><option>20 000-50 000</option><option>50 000-80 000</option><option>80 000-110 000</option><option>110 000-150 000</option><option>150 000+</option>
+              <option>5000</option><option>20000</option><option>50000</option><option>80000</option><option>110000</option><option>150000</option><option>200000</option>
             </select>
           </div>
         </div>
         <div class="form-group col-md-6">
           <label for="lisätietoja">Lisätietoja autosta</label>
-          <textarea class="form-control" id="lisätietoja" rows="3" placeholder="Auto on hyvässä kunnossa jne."></textarea>
+          <textarea class="form-control" name="lisatieto" rows="3" placeholder="Auto on hyvässä kunnossa jne."></textarea>
         </div>
         <div>
           <label>Lisää vielä kuva autostasi</label>

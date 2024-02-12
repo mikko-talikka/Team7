@@ -1,7 +1,10 @@
 <?php
 
+session_start();
+
 session_unset();
 
-header("Location:./yhteysvirhe.html");
+header("Location:./kirjaudu.php");
+exit;
 
 ?>
