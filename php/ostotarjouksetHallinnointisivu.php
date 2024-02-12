@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="../css/styles-mikko.css">
 </head>
 <body>
-    <header class="headerHuolto">
-        <h1 class="h1Huolto">LUXCAR</h1>
-        <h2>henkilökunnan hallinnointisivu</h2>
+    <header class="headerOsto">
+        <h1 class="h1Osto">LUXCAR</h1>
+        <h2 class="h2Osto">Henkilökunnan hallinnointisivu</h2>
     </header>
-    <nav class="navHuolto">
-        <ul class="navUlHuolto">
-            <li class="liHuolto"><a class="aHuolto">OSTOTARJOUKSET</a></li>
+    <nav class="navOsto">
+        <ul class="navUlOsto">
+            <li class="liOsto"><a class="aOsto">OSTOTARJOUKSET</a></li>
+            <li class="liUloskirjaus"><a class="aUloskirjaus" href="./uloskirjaus.php"><h3>KIRJAUDU ULOS</h3></a></li>
         </ul>
     </nav>
-    <main>
-    <?php
+    <main class="mainOsto">
+        <?php
             mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 
             $initials=parse_ini_file("./.ht.asetukset.ini");
@@ -26,14 +27,14 @@
                 $yhteys=mysqli_connect($initials["palvelin"], $initials["tunnus"] , $initials["pass"], $initials["tk"]);
             }
             catch(Exception $e){
-                header("Location:./yhteysvirhe.html");
+                header("Location:../pages/yhteysvirhe.html");
                 exit;
             }
 
             $tulos=mysqli_query($yhteys, "select * from ostotarjoukset");
-            print "<table border='1'>";
-            print "<tr><th>ID</th><th>Rekisterinumero</th><th>Puhelinnumero</th><th>Sähköposti</th><th>Kokonimi</th><th>Raha</th>
-            <th>Kilometrilukema</th><th>Lisätieto</th><th>Kuva</th><th>Käsittelyntila</th><th>Toiminnot</th></tr>";
+            print "<table class='tableOsto'>";
+            print "<tr><th>ID</th><th>Rekisterinumero</th><th>Puhelinnumero</th><th>Sähköposti</th><th>Kokonimi</th><th>Raha</th><th>Kilometrilukema</th>
+            <th>Lisätieto</th><th>Kuva</th><th>Käsittelyntila</th><th>Toiminnot</th></tr>";
             while ($rivi = mysqli_fetch_object($tulos)) {
                 print "<tr>";
                 print "<td>$rivi->id</td>";
@@ -54,5 +55,6 @@
             mysqli_close($yhteys);
         ?>
     </main>
+    
 </body>
 </html>

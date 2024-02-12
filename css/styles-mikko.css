@@ -1,3 +1,86 @@
+/*ostotarjoukset hallinnointisivun tyylit */
+
+.headerOsto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    padding: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.h1Osto {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.h2Osto {
+    font-size: 30px;
+    margin-top: 0;
+}
+.navOsto{
+    position: relative; /* Asetetaan suhteellinen sijoittelu, jotta voimme käyttää absoluuttista sijoittelua ala-elementeille */
+    background-color: rgb(61, 61, 61);
+    padding: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navUlOsto{
+    list-style: none;
+}
+.liOsto{
+    display: inline-block;
+    margin: 0 10px; /* Lisätään marginaali molempiin reunoille */
+}
+.aOsto{
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(214, 205, 205);
+}
+.liUloskirjaus{
+    position: absolute; /* Asetetaan absoluuttinen sijoittelu */
+    right: 10px; /* Sijoitetaan oikealle */
+    bottom: 10px; /* Sijoitetaan alareunaan */
+}
+.aUloskirjaus{
+    text-decoration: none;
+    font-size: 18px; /* Pienempi fonttikoko */
+    color: rgb(214, 205, 205);
+}
+.mainOsto{
+    display: flex;
+    justify-content: center; /* Keskitys vaakasuunnassa */
+    height: 50vh; /* Voit käyttää täyden näytön korkeutta */
+    padding: 10px;
+    margin-top: 20px;
+}
+.tableOsto {
+    border: 2px solid #ddd; /* Lisäämme 2 pikselin harmaat reunat taulukon ympärille */
+    border-collapse: collapse; /* Yhdistetään solujen reunat */
+    width: 90%; /* Valitse sopiva leveys */
+}
+
+.tableOsto th, .tableOsto td {
+    border: 1px solid #ddd; /* Lisätään 1 pikselin harmaat reunat soluihin */
+    padding: 6px; /* Lisäämme hieman tilaa solujen sisäpuolelle */
+    line-height: 1.4;
+    text-align: center;
+    word-wrap: break-word; /* Teksti katkeaa ja jatkuu uudella rivillä tarvittaessa */
+    overflow: auto; /* Jos soluun tulee liikaa tekstiä, siihen tulee vierityspalkit */
+}
+
+.tableOsto th {
+    background-color: #f2f2f2; /* Taustaväri otsikoille */
+    font-weight: bold; /* Lihavoi otsikot */
+    text-align: center; /* Asetetaan tekstin vasen kohdistus otsikoille */
+}
+
+.tableOsto tr:nth-child(even) {
+    background-color: #f9f9f9; /* Vaihtoehtoinen taustaväri parillisille riveille */
+}
+
 /*Huolto-sivun tyylit */
 
 .headerHuolto{
