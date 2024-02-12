@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Luxury Cars, new and pre-owned cars, Helsinki, car offer, Luksusautoja, uusia ja käytettyjä, ostotarjoukset">
     <title>Luxcar - Ostotarjoukset</title>
+    <!--Scripti formia varten-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles-arttu.css">
 </head>
@@ -24,7 +27,7 @@
     <header><strong>Myy autosi meille</strong></header>
     <p>Jos haluat myydä autosi meille, vastaa tähän lyhyeen kyselyyn niin meidän sisäänostaja ottaa teihin yhteyttä. 
         Etsimme luksus autoja mutta voit ehdottaa myös jokapäiväisiä autoja.</p>
-      <form action="php/email.php" method="post">
+      <form id="asiakasform" action="php/email.php" method="post">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="rekkari">Rekisterinumero*</label>
@@ -69,6 +72,43 @@
         <p2> Kentät joissa on * merkki vastaus on pakollinen.</p2>
         <button type="submit" class="btn btn-primary">Lähetä</button>
       </form>
+
+      <!--Ostotarjouksen lähetys-->
+      <script>
+        $(document).ready(function(){
+          $('#asiakasform').submit(function(e){
+            e.preventDefault(); // Prevent form submission
+            
+            var formData = $(this).serialize(); // Serialize form data
+            
+            // Tiedon lähetys sähköpostiviestille
+            $.ajax({
+              type: 'POST',
+              url: 'php/email.php',
+              data: formData,
+              success: function(response) {
+                console.log('Data sent to email.php');
+              },
+              error: function(xhr, status, error) {
+                console.error('Error sending data to email.php:', error);
+              }
+            });
+            
+            // Tiedon lähetys tietokantaan
+            $.ajax({
+              type: 'POST',
+              url: 'php/laheta.php',
+              data: formData,
+              success: function(response) {
+                console.log('Data sent to laheta.php');
+              },
+              error: function(xhr, status, error) {
+                console.error('Error sending data to laheta.php:', error);
+              }
+            });
+          });
+        });
+        </script>
 </main>
 <footer>
    <div class="vali">
