@@ -145,3 +145,23 @@ footer p, footer h2 {
         flex-direction: row;
         justify-content: space-between;
     }
+/* Kirjaudu.php*/
+
+.kirjaudu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.kirjaudu input[type="text"],
+.kirjaudu input[type="password"],
+.kirjaudu input[type="submit"] {
+    width: 200px; 
+    margin-bottom: 10px;
+}
+
+.kirjaudu input[type="submit"] {
+    width: auto;
+}
