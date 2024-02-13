@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+    <link rel="stylesheet" href="../styles-eemeli.css">
+    </head>
     <body>
 
-
-<?php
-
-?>
 <form action='./tarkistakirjautuminen.php' method='post'>
     Tunnus: <input type='text' name='tunnus' value=''><br>
     Salasana: <input type='password' name='salasana' value=''><br>
