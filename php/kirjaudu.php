@@ -4,12 +4,15 @@
     <link rel="stylesheet" href="../css/styles-eemeli.css">
     </head>
     <body>
-<!--Kirjautumis formi-->
-<form class="kirjaudu" action='./tarkistakirjautuminen.php' method='post'>
-    Tunnus: <input type='text' name='tunnus' value=''><br>
-    Salasana: <input type='password' name='salasana' value=''><br>
-    <input type='submit' name='ok' value='OK'><br>
-</form>
+        <header class="">
+            <h1 class="">LUXCAR</h1>
+            <h2 class="">Henkilökunnan sisäänkirjautuminen</h2>
+        </header>
+        <form action='./tarkistakirjautuminen.php' method='post' class="kirjaudu">
+            Tunnus: <input type='text' name='tunnus' value=''><br>
+            Salasana: <input type='password' name='salasana' value=''><br>
+            <input type='submit' name='ok' value='OK'><br>
+        </form>
 
 </body>
 </html>
