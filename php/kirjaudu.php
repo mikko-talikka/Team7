@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="../styles-eemeli.css">
+    <link rel="stylesheet" href="../css/styles-eemeli.css">
     </head>
     <body>
 

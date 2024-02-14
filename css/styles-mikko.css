@@ -80,6 +80,10 @@
 .tableOsto tr:nth-child(even) {
     background-color: #f9f9f9; /* Vaihtoehtoinen taustaväri parillisille riveille */
 }
+.tableOsto img {
+    max-width: 150px;
+    max-height: 150px;
+}
 
 /*Huolto-sivun tyylit */
 

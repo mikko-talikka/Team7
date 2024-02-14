@@ -1,3 +1,6 @@
+<?php
+    include ("./vaatiikirjautumisen.php");
+?>
 <!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -5,11 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ostotarjoukset - hallinnointisivu</title>
     <link rel="stylesheet" href="../css/styles-mikko.css">
+    <script src="../JS/suurennaKuva.js"></script>
 </head>
 <body>
-    <?php
-    include ("./vaatiikirjautumisen.php");
-    ?>
     <header class="headerOsto">
         <h1 class="h1Osto">LUXCAR</h1>
         <h2 class="h2Osto">Henkilökunnan hallinnointisivu</h2>
@@ -48,10 +49,9 @@
                 print "<td>$rivi->raha</td>";
                 print "<td>$rivi->kilometrilukema</td>";
                 print "<td>$rivi->lisatieto</td>";
-                print "<td>$rivi->kuva</td>";
+                print "<td><img src='$rivi->tiedostoPolku' alt='Kuva ei lataudu tai sitä ei ole' onclick='suurennaKuva(this)'></td>";
                 print "<td>$rivi->kasittelyntila</td>";
-                print "<td><a href='./katso.php?katsottava=$rivi->id'>Katso</a> | <a href='./muokkaa.php?muokattava=$rivi->id'>Muokkaa</a> | 
-                <a href='./poista.php?poistettava=$rivi->id'>Poista</a></td>";
+                print "<td><a href='./muokkaa.php?muokattava=$rivi->id'>Muokkaa</a> | <a href='./poista.php?poistettava=$rivi->id'>Poista</a></td>";
                 print "</tr>";
             }
             print "</table>";
