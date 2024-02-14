@@ -30,7 +30,7 @@ catch(Exception $e){
 $sql="update ostotarjoukset set rekisterinumero=?, puhelinnumero=?, email=?, kokonimi=?, raha=?, kilometrilukema=?, lisatieto=?, kasittelyntila=? where id=?";
 
 $stmt=mysqli_prepare($yhteys, $sql);
-mysqli_stmt_bind_param($stmt, 'sissiissi', $rekisterinumero, $puhelinnumero, $email, $kokonimi, $raha, $kilometrilukema, $lisatieto, $kasittelyntila, $id);
+mysqli_stmt_bind_param($stmt, 'ssssiissi', $rekisterinumero, $puhelinnumero, $email, $kokonimi, $raha, $kilometrilukema, $lisatieto, $kasittelyntila, $id);
 mysqli_stmt_execute($stmt);
 mysqli_close($yhteys);
 
