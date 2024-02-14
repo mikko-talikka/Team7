@@ -1,15 +1,16 @@
 <?php
 session_start();
-
+// Tallennetaan käyttäjän syöttämät tunnukset muuttujiin
 if (isset($_POST["tunnus"]) && isset($_POST["salasana"])) {
     $tunnus=$_POST["tunnus"];
     $salasana=$_POST["salasana"];
 }
+// Jos ei onnistu, siirrytään yhteysvirhe-sivulle
 else {
     header("Location:../pages/yhteysvirhe.html");
     exit;
 }
-
+// 
 $initials=parse_ini_file("./.ht.asetukset.ini");
             
 try{
