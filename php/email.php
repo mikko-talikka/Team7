@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Redirect back to the form if accessed directly
-    header("Location: pages/ostotarjoukset.html");
+    header("Location: ../pages/ostotarjoukset.html");
     exit();
 }
 ?>

@@ -32,6 +32,6 @@ mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys
 mysqli_close($yhteys);
 
-header("Location:../index.html");
+header("Location:../kiitossivu.html");
 exit;
 ?>
