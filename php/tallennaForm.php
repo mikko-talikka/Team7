@@ -68,7 +68,7 @@ $sql="insert into ostotarjoukset (rekisterinumero, puhelinnumero, email, kokonim
 //Valmistellaan sql-laussee
 $stmt=mysqli_prepare($yhteys, $sql);
 //Sijoitetaan muuttujat oikeisiin paikkoihin
-mysqli_stmt_bind_param($stmt, 'sissiissss', $rekisterinumero, $puhelinnumero, $email, $kokonimi, $raha, $kilometrilukema, $lisatieto, $kuvaNimi, $tiedostoPolku, $kasittelyntila);
+mysqli_stmt_bind_param($stmt, 'ssssiissss', $rekisterinumero, $puhelinnumero, $email, $kokonimi, $raha, $kilometrilukema, $lisatieto, $kuvaNimi, $tiedostoPolku, $kasittelyntila);
 //Suoritetaan sql-lause
 mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys

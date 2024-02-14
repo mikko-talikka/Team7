@@ -28,27 +28,27 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="rekkari">Rekisterinumero*</label>
-            <input type="text" class="form-control" name="rekisterinumero"placeholder="OOO-000" required>
+            <input type="text" class="form-control" name="rekisterinumero"placeholder="OOO-000" required max="10">
           </div>
           <div class="form-group col-md-6">
             <label for="numero">Puhelinnumero*</label>
-            <input type="tel" class="form-control" name="puhelinnumero" placeholder="+35800000000" required>
+            <input type="tel" class="form-control" name="puhelinnumero" placeholder="+35800000000" required max="15">
           </div>
         </div>
         <div class="form-group">
          <div class="form-group col-md-6">
           <label for="email">Email*</label>
-          <input type="email" class="form-control" name="email" placeholder="email@gmail.com" required>
+          <input type="email" class="form-control" name="email" placeholder="email@gmail.com" required max="50">
         </div>
         <div class="form-group">
          <div class="form-group col-md-6">
           <label for="name">Koko nimesi*</label>
-          <input type="text" class="form-control" name="kokonimi" placeholder="Jaakko Jaakkola" required>
+          <input type="text" class="form-control" name="kokonimi" placeholder="Jaakko Jaakkola" required max="50">
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="rahamäärä">Haluamasi raha autosta</label>
-            <input type="text" class="form-control" name="raha">
+            <input type="number" class="form-control" name="raha">
           </div>
           <div class="form-group col-md-4">
             <label for="Kilometri">Kilometri määrä*</label>
@@ -61,7 +61,7 @@
         </div>
         <div>
           <label>Lisää vielä kuva autostasi</label>
-          <input type="file" name="fileToUpload" id="fileToUpload">
+          <input type="file" name="fileToUpload" id="fileToUpload" max="50">
         </div>
         <p2> Kentät joissa on * merkki vastaus on pakollinen.</p2>
         <!-- <button type="submit" class="btn btn-primary">Lähetä</button> -->
