@@ -124,3 +124,12 @@ background-color: rgb(35, 34, 34);
             flex-direction: row;
             justify-content: space-between;
         }
+        .kiitosmain{
+            margin: 0px;
+        }
+        .kiitosh1{
+            font-size: 30px;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 250px;
+        }
