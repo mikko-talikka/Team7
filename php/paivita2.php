@@ -2,17 +2,16 @@
 
 // sijoitetaan muuttujiin lomakkeelta tullut post muotoinen tieto
 $id=isset($_POST["id"]) ? $_POST["id"] : "";
-$rekisterinumero=isset($_POST["rekisterinumero"]) ? $_POST["rekisterinumero"] : "";
+$kokonimi=isset($_POST["kokonimi"]) ? $_POST["kokonimi"] : "";
 $puhelinnumero=isset($_POST["puhelinnumero"]) ? $_POST["puhelinnumero"] : "";
 $email=isset($_POST["email"]) ? $_POST["email"] : "";
-$kokonimi=isset($_POST["kokonimi"]) ? $_POST["kokonimi"] : "";
-$raha=isset($_POST["raha"]) ? $_POST["raha"] : "";
-$kilometrilukema=isset($_POST["kilometrilukema"]) ? $_POST["kilometrilukema"] : "";
-$lisatieto=isset($_POST["lisatieto"]) ? $_POST["lisatieto"] : "";
+$date=isset($_POST["date"]) ? $_POST["date"] : "";
+$time=isset($_POST["time"]) ? $_POST["time"] : "";
+$viesti=isset($_POST["viesti"]) ? $_POST["viesti"] : "";
 $kasittelyntila=isset($_POST["kasittelyntila"]) ? $_POST["kasittelyntila"] : "";
 
 // tarkistetaan, onko kaikki tiedot syötetty
-if (empty($id) || empty($rekisterinumero) || empty($puhelinnumero) || empty($email) || empty($kokonimi) || empty($raha) || empty($kilometrilukema) || empty($lisatieto) || empty($kasittelyntila)){
+if (empty($id) || empty($kokonimi) || empty($puhelinnumero) || empty($email) || empty($date) || empty($time) || empty($viesti) || empty($kasittelyntila)){
     header("Location:../pages/yhteysvirhe.html");
     exit;
 }
@@ -30,10 +29,10 @@ catch(Exception $e){
 }
 
 // SQL-lauseen valmistelu ja muodostaminen
-$sql="update ostotarjoukset set rekisterinumero=?, puhelinnumero=?, email=?, kokonimi=?, raha=?, kilometrilukema=?, lisatieto=?, kasittelyntila=? where id=?";
+$sql="update huolto set kokonimi=?, puhelinnumero=?, email=?, date=?, time=?, viesti=?, kasittelyntila=? where id=?";
 $stmt=mysqli_prepare($yhteys, $sql);
 // Arvojen sitominen parametripaikkoihin
-mysqli_stmt_bind_param($stmt, 'ssssiissi', $rekisterinumero, $puhelinnumero, $email, $kokonimi, $raha, $kilometrilukema, $lisatieto, $kasittelyntila, $id);
+mysqli_stmt_bind_param($stmt, 'sssssssi', $kokonimi, $puhelinnumero, $email, $date, $time, $viesti, $kasittelyntila, $id);
 // SQL-lauseen suorittaminen
 mysqli_stmt_execute($stmt);
 // tietokantayhteyden sulkeminen

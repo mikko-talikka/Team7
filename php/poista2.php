@@ -11,13 +11,13 @@ catch(Exception $e){
     exit;
 }
 
-// poistettavan ostotarjouksen ID:n hakeminen
-$poistettava=isset($_GET["poistettava"]) ? $_GET["poistettava"] : "";
+// poistettavan huoltopyynnön ID:n hakeminen
+$poistettava=isset($_GET["poistettava2"]) ? $_GET["poistettava2"] : "";
 
 // jos ID ei ole tyhjä
 if (!empty($poistettava)){
     // SQL-lauseen muodostaminen ja valmistelu
-    $sql="delete from ostotarjoukset where id=?";
+    $sql="delete from huolto where id=?";
     $stmt=mysqli_prepare($yhteys, $sql);
     // arvojen sitominen parametripaikkoihin
     mysqli_stmt_bind_param($stmt, 'i', $poistettava);

@@ -51,15 +51,26 @@
 }
 .mainOsto{
     display: flex;
-    justify-content: center; /* Keskitys vaakasuunnassa */
-    height: 50vh; /* Voit käyttää täyden näytön korkeutta */
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
-    margin-top: 20px;
+    width: 90%!important; /* Muutettu leveys täyttämään suurimman osan sivusta */
+    margin-left: auto; /* Keskittää taulukon sivun keskelle */
+    margin-right: auto;
+}
+.divOsto{
+    margin-bottom: 20px;
+}
+.otsikko{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .tableOsto {
+    margin-bottom: 20px;
     border: 2px solid #ddd; /* Lisäämme 2 pikselin harmaat reunat taulukon ympärille */
     border-collapse: collapse; /* Yhdistetään solujen reunat */
-    width: 90%; /* Valitse sopiva leveys */
+    width: 90%!important; /* Muutettu leveys täyttämään suurimman osan sivusta */
+    margin-left: auto; /* Keskittää taulukon sivun keskelle */
+    margin-right: auto;
 }
 
 .tableOsto th, .tableOsto td {
@@ -84,6 +95,47 @@
     max-width: 150px;
     max-height: 150px;
 }
+.formOsto {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 20px auto;
+  }
+  
+.formOsto input {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+.formOsto input[type="submit"] {
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 200px;
+    margin-top: 20px;
+  }
+  .formOsto input[type="button"] {
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 300px;
+    margin-top: 20px;
+  }
+
 
 /*Huolto-sivun tyylit */
 

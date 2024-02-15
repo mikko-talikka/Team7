@@ -1,7 +1,7 @@
 <?php
 
-// sijoitetaan muuttujaan tiedot muokattavasta ostotarjouksesta
-$muokattava=isset($_GET["muokattava"]) ? $_GET["muokattava"] : "";
+// sijoitetaan muuttujaan tiedot muokattavasta huoltopyynnöstä
+$muokattava=isset($_GET["muokattava2"]) ? $_GET["muokattava2"] : "";
 
 // ohjataan takaisin, jos on tyhjä
 if (empty($muokattava)){
@@ -22,7 +22,7 @@ catch(Exception $e){
 }
 
 // SQL-lauseen muodostaminen ja valmistelu
-$sql="select * from ostotarjoukset where id=?";
+$sql="select * from huolto where id=?";
 $stmt=mysqli_prepare($yhteys, $sql);
 // arvojen sitominen parametripaikkoihin
 mysqli_stmt_bind_param($stmt, 'i', $muokattava);
@@ -42,26 +42,25 @@ if (!$rivi=mysqli_fetch_object($tulos)){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muokkaa ostotarjousta</title>
+    <title>Muokkaa huoltopyyntöä</title>
     <link rel="stylesheet" href="../css/styles-mikko.css">
 </head>
 <body>
 <header class="headerOsto">
             <h1 class="h1Osto">LUXCAR</h1>
-            <h2 class="h2Osto">Muokkaa ostotarjousta</h2>
+            <h2 class="h2Osto">Muokkaa huoltopyyntöä</h2>
         </header>
 
 <!-- tehdään käyttäjälle <form> elementtiin lomake, missä näkyy tietokannasta tämänhetkiset tiedot. Käyttäjä pääsee näitä arvoja muokkaamaan
     ja lopuksi valitsemaan kahden napin välillä: tallennetaanko muutetut (tai samat) tiedot vai palataanko takaisin etusivulle -->
-<form action='./paivita.php' method='post' class='formOsto'>
+<form action='./paivita2.php' method='post' class='formOsto'>
 id:<input type='text' name='id' value='<?php print $rivi->id;?>' readonly><br>
-rekisterinumero:<input type='text' name='rekisterinumero' value='<?php print $rivi->rekisterinumero;?>'><br>
+kokonimi:<input type='text' name='kokonimi' value='<?php print $rivi->kokonimi;?>'><br>
 puhelinnumero:<input type='tel' name='puhelinnumero' value='<?php print $rivi->puhelinnumero;?>'><br>
 Sähköposti:<input type='email' name='email' value='<?php print $rivi->email;?>'><br>
-Koko nimesi:<input type='text' name='kokonimi' value='<?php print $rivi->kokonimi;?>'><br>
-Haluamasi rahamäärä autosta:<input type='text' name='raha' value='<?php print $rivi->raha;?>'><br>
-Kilometrilukema:<input type='text' name='kilometrilukema' value='<?php print $rivi->kilometrilukema;?>'><br>
-Lisätieto:<input type='text' name='lisatieto' value='<?php print $rivi->lisatieto;?>'><br>
+Huoltopäivä:<input type='text' name='date' value='<?php print $rivi->date;?>'><br>
+Huoltoaika:<input type='text' name='time' value='<?php print $rivi->time;?>'><br>
+Viesti:<input type='text' name='viesti' value='<?php print $rivi->viesti;?>'><br>
 Käsittelyn tila:<input type='text' name='kasittelyntila' value='<?php print $rivi->kasittelyntila;?>'><br>
 <input type='submit' name='ok' value='Tallenna'><br>
 <input type='button' value='Takaisin etusivulle tallentamatta' onclick="location.href='./ostotarjouksetHallinnointisivu.php'">
