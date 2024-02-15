@@ -152,7 +152,7 @@ footer p, footer h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
 }
 
 .kirjaudu input[type="text"],
@@ -167,21 +167,21 @@ footer p, footer h2 {
 }
 
 .h1Kirjaudu{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
    align-items: center;
    color: white;
 }
 
 .h2Kirjaudu{
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
    align-items: center;
-   color: white;
-}
+   color: black;
+ }
 
 .headerKirjaudu{
     display: flex;
     background-color: rgb(75, 75, 75);
     color: rgb(255, 255, 255);
-    padding: 2px;
+    padding: 4px;
     place-content: center;
 }
