@@ -24,7 +24,7 @@ $viesti=isset($_POST["viesti"]) ? $_POST["viesti"] : "";
 $kasittelyntila="uusi";
 
 // SQL-lauseen muodostaminen ja valmistelu
-$sql="insert into huolto (kokonimi, puhelinnumero, email, date, time, viesti) values(?, ?, ?, ?, ?, ?)";
+$sql="insert into huolto (kokonimi, puhelinnumero, email, date, time, viesti, kasittelyntila) values(?, ?, ?, ?, ?, ?, ?)";
 
 //Valmistellaan sql-laussee
 $stmt=mysqli_prepare($yhteys, $sql);
