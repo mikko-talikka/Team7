@@ -45,7 +45,7 @@
             print "<div class='divOsto'>";
             print "<table class='tableOsto'>";
             print "<tr><th>ID</th><th>Rekisterinumero</th><th>Puhelinnumero</th><th>Sähköposti</th><th>Kokonimi</th><th>Raha</th><th>Kilometrilukema</th>
-            <th>Lisätieto</th><th>Kuva</th><th>Käsittelyntila</th><th>Toiminnot</th></tr>";
+            <th>Lisätieto</th><th>Kuva</th><th>Käsittelyn tila</th><th>Toiminnot</th></tr>";
             // ostotarjousten tulostaminen taulokkoon
             while ($rivi = mysqli_fetch_object($tulos)) {
                 print "<tr>";
@@ -74,7 +74,7 @@
             print "<div class='divOsto'>";
             print "<table class='tableOsto'>";
             print "<tr><th>ID</th><th>Kokonimi</th><th>Puhelinnumero</th><th>Sähköposti</th><th>Huoltopäivä</th><th>Huoltoaika</th><th>Lisätiedot</th>
-            <th>Käsittelyntila</th><th>Toiminnot</th></tr>";
+            <th>Käsittelyn tila</th><th>Toiminnot</th></tr>";
             // huoltopyyntöjen tulostaminen taulokkoon
             while ($rivi = mysqli_fetch_object($tulos)) {
                 print "<tr>";
