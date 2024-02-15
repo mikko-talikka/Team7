@@ -26,7 +26,7 @@ $sql="insert into huolto (kokonimi, puhelinnumero, email, date, time, viesti) va
 //Valmistellaan sql-laussee
 $stmt=mysqli_prepare($yhteys, $sql);
 //Sijoitetaan muuttujat oikeisiin paikkoihin
-mysqli_stmt_bind_param($stmt, 'ssssss', $kokonimi, $puhelinnumero, $email, $date, $time, $viesti);
+mysqli_stmt_bind_param($stmt, 'sssssss', $kokonimi, $puhelinnumero, $email, $date, $time, $viesti, $kasittelyntila);
 //Suoritetaan sql-lause
 mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys
