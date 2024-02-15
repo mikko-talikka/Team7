@@ -169,11 +169,13 @@ footer p, footer h2 {
 .h1Kirjaudu{
     font-family: Arial, Helvetica, sans-serif;
    align-items: center;
+   color: white;
 }
 
 .h2Kirjaudu{
     font-family: Arial, Helvetica, sans-serif;
    align-items: center;
+   color: white;
 }
 
 .headerKirjaudu{
