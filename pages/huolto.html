@@ -29,19 +29,19 @@
         <!--tämän section sisällä ovat vierekkäin kuva huollettavasta autosta ja yhteydenottolomake (form) flexboxeissa-->    
         <section class="sectionHuolto">
             <img class="imgHuolto" src="../images/autoNosturissa.jpg" alt="Luksusauto korjauksessa">
-            <form class="formHuolto" method="post" action="#">
+            <form class="formHuolto" action="../php/tallennaHuolto.php" method="post">
                 <label for="formControlInput" class="form-label">Nimi</label>
-                <input type="text" class="form-control" id="formControlInput" placeholder="Mikko Mallikas" name="varaajanNimi" required minlength="4" maxlength="30">
+                <input type="text" class="form-control" id="formControlInput" placeholder="Mikko Mallikas" name="kokonimi" required minlength="4" maxlength="30">
                 <label for="formControlInput" class="form-label">Puhelin</label>
-                <input type="number" class="form-control" id="formPhoneInput" placeholder="0501234567" name="varaajanPuhelin">
+                <input type="number" class="form-control" id="formPhoneInput" placeholder="0501234567" name="puhelinnumero">
                 <label for="formControlInput" class="form-label">Sähköposti</label>
-                <input type="email" class="form-control" id="formEmailInput" placeholder="nimi@esimerkki.fi" name="varaajanEmail">
+                <input type="email" class="form-control" id="formEmailInput" placeholder="nimi@esimerkki.fi" name="email">
                 <label for="formControlInput" class="form-label">Huollon päivämäärä</label>
-                <input type="date" class="form-control" id="formDateInput" name="huollonPvm">
+                <input type="date" class="form-control" id="formDateInput" name="date">
                 <label for="formControlInput" class="form-label">Huollon kellonaika</label>
-                <input type="time" class="form-control" id="formTimeInput" name="huollonKlo">
+                <input type="time" class="form-control" id="formTimeInput" name="time">
                 <label for="formControlInput" class="form-label">Viesti huollolle (tarvittaessa)</label>
-                <input type="text" class="form-control" id="formMessageInput" placeholder="Tarvitsen sijaisauton huollon ajaksi. Mielellään merkkiä Ferrari. Lisäksi haluan, että auto noudetaan huoltoon pihastani ja palautetaan samaan paikkaan." name="viestiHuollolle"><br>
+                <input type="text" class="form-control" id="formMessageInput" placeholder="Tarvitsen sijaisauton huollon ajaksi. Mielellään merkkiä Ferrari. Lisäksi haluan, että auto noudetaan huoltoon pihastani ja palautetaan samaan paikkaan." name="viesti"><br>
                 <input type="submit" value="Lähetä" name="submit">
             </form>
         </section>
