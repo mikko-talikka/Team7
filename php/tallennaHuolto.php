@@ -19,7 +19,7 @@ $date=isset($_POST["date"]) ? $_POST["date"] : "";
 $time=isset($_POST["time"]) ? $_POST["time"] : "";
 $viesti=isset($_POST["viesti"]) ? $_POST["viesti"] : "";
 //$lisatieto=isset($_POST["lisatieto"]) ? $_POST["lisatieto"] : "";
-//$kasittelyntila="uusi";
+$kasittelyntila="uusi";
 
 $sql="insert into huolto (kokonimi, puhelinnumero, email, date, time, viesti) values(?, ?, ?, ?, ?, ?)";
 
