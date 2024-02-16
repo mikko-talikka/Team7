@@ -8,7 +8,7 @@ $uploadOk = 1;
 // määritetään ladatun kuvan tiedostotyyppin
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-// tarkistetaan, onko ladattu tiedosto kuva, funktio palauttaa taulukon, joka sisältää tietoa kuvasta jos se on onnistuneesti tunnistettu
+// tarkistetaan, onko ladattu tiedosto kuva: funktio palauttaa taulukon, joka sisältää tietoa kuvasta jos se on onnistuneesti tunnistettu
 if(isset($_POST["submit"])) {                                       
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);       
     if($check !== false) {                                            
