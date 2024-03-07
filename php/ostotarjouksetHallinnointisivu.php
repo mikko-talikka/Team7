@@ -1,6 +1,12 @@
 <?php
-    // sisällytetään heti sivun alkuun ohjelma, mikä vaatii sisäänkirjautumisen tälle sivulle
-    include ("./vaatiikirjautumisen.php");
+// Aloitetaan sessio
+    session_start();
+    // Vaatii, että henkilö on kirjautunut sivulle, jos ei ole, siirrytään kirjaudu.php
+    if (!isset($_SESSION["user_ok"])){
+        $_SESSION["paluuosoite"]="ostotarjouksetHallinnointisivu.php";
+        header("Location:./kirjaudu.php");
+        exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fi">

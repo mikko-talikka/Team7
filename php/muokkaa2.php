@@ -1,4 +1,12 @@
 <?php
+// Aloitetaan sessio
+session_start();
+// Vaatii, että henkilö on kirjautunut sivulle, jos ei ole, siirrytään kirjaudu.php
+if (!isset($_SESSION["user_ok"])){
+    $_SESSION["paluuosoite"]="ostotarjouksetHallinnointisivu.php";
+    header("Location:./kirjaudu.php");
+    exit;
+}
 
 // sijoitetaan muuttujaan tiedot muokattavasta huoltopyynnöstä
 $muokattava=isset($_GET["muokattava2"]) ? $_GET["muokattava2"] : "";
