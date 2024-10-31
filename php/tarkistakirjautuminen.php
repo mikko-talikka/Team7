@@ -33,7 +33,8 @@ $tulos=mysqli_stmt_get_result($stmt);
 // Jos syötetty salasana täsmää, siirrytään hallinnointisivulle
 if ($rivi=mysqli_fetch_object($tulos)) {
     $_SESSION["user_ok"]="ok";
-    header("Location:./ostotarjouksetHallinnointisivu.php");
+    $_SESSION["paluuosoite"]="./ostotarjouksetHallinnointisivu.php";
+    header("Location:".$_SESSION["paluuosoite"]);
     exit;
 }
 // Jos ei täsmää, yhteysvirhe

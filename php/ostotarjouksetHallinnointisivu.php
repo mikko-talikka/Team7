@@ -1,6 +1,12 @@
 <?php
-    // sisällytetään heti sivun alkuun ohjelma, mikä vaatii sisäänkirjautumisen tälle sivulle
-    include ("./vaatiikirjautumisen.php");
+// Aloitetaan sessio
+    session_start();
+    // Vaatii, että henkilö on kirjautunut sivulle, jos ei ole, siirrytään kirjaudu.php
+    if (!isset($_SESSION["user_ok"])){
+        $_SESSION["paluuosoite"]="ostotarjouksetHallinnointisivu.php";
+        header("Location:./kirjaudu.php");
+        exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fi">
@@ -19,6 +25,7 @@
     <nav class="navOsto">
         <ul class="navUlOsto">
             <li class="liOsto"><a class="aOsto">OSTOTARJOUKSET JA HUOLTOPYYNNÖT</a></li>
+            <li class="liOsto"><a href="./dokumentaatio/WebOhjelmointi_team7.docx" download="DokumentaatioTeam7" class="aOsto">LATAA RYHMÄTYÖN DOKUMENTAATIO TÄSTÄ</a></li>
             <li class="liUloskirjaus"><a class="aUloskirjaus" href="./uloskirjaus.php"><h3>KIRJAUDU ULOS</h3></a></li>
         </ul>
     </nav>
